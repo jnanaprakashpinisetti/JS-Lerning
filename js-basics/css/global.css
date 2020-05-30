@@ -1,12 +1,17 @@
 html,
 body {
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 .full-height {
   height: 89.4vh;
   display: flex;
+}
+
+.mid-body {
+  overflow-y: auto
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
@@ -36,7 +41,40 @@ img {
 }
 
 .sidenav.left-side {
- background-color: #384E65
+  background-color: #c8c8c8;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidenav.left-side p {
+  margin-bottom: 0
+}
+
+.sidenav.left-side p a {
+  padding: 5px 20px;
+  border-bottom: 1px solid #2F4052;
+  color: #232323;
+  display: block;
+  text-decoration: none
+}
+
+.sidenav.left-side p a.active,
+.sidenav.left-side p a:hover {
+  background-color: #2F4052;
+  color: #fff;
+
+}
+
+.sidenav .well {
+  background-color: #fff;
+  border-radius: 0;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, .05) */
+}
+
+h1,
+h2,
+h3 {
+  color: #2F4052
 }
 
 /* Set black background color, white text and some padding */
@@ -56,4 +94,26 @@ footer {
   .row.content {
     height: auto;
   }
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
