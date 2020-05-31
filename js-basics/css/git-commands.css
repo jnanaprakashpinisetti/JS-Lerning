@@ -1,4 +1,4 @@
-table.confluenceTable {
+/* table.confluenceTable {
   margin-top: 12px;
   border-collapse: separate;
   border-spacing: 0;
@@ -21,9 +21,9 @@ table.confluenceTable th.confluenceTh {
   padding-bottom: 0;
   font-weight: normal;
   color: #42526E;
-}
+} */
 
-table.confluenceTable th.confluenceTh,
+/* table.confluenceTable th.confluenceTh,
 table.confluenceTable td.confluenceTd {
   padding: 10px;
   border-style: solid;
@@ -42,7 +42,7 @@ table.confluenceTable td.confluenceTd {
   border-bottom-width: 1px;
   border-top-width: 0;
   border-left-width: 0;
-}
+} */
 
 pre {
   display: block;
