@@ -1,5 +1,5 @@
 leftNav = (active_item) => {
-  document.write('<div class="col-sm-1 sidenav left-side">\
+  document.write('<div class="col-xs-12 col-sm-2 col-md-2 sidenav left-side">\
   <p><a href="git-commands.html" id="git">Git Basic</a></p>\
   <p><a href="#">Link</a></p>\
   <p><a href="#">Link</a></p>\
