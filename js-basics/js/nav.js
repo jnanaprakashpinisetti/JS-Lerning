@@ -2,14 +2,20 @@ leftNav = (active_item) => {
   document.write('<div class="col-xs-12 col-sm-2 col-md-2 sidenav left-side">\
   <h3>Topics</h3>\
   <p><a href="git-commands.html" id="git">Git Basic</a></p>\
-  <p><a href="#">Link</a></p>\
-  <p><a href="#">Link</a></p>\
+  <p><a href="oops.html" id="oops">oops</a></p>\
+  <p><a href="components.html" id="components">Components</a></p>\
   <p><a href="#">Link</a></p>\
 </div>')
 
   switch (active_item) {
     case "git":
       document.getElementById("git").classList.add("active");
+      break;
+    case "oops":
+      document.getElementById("oops").classList.add("active");
+      break;
+    case "components":
+      document.getElementById("components").classList.add("active");
       break;
     case "":
       document.getElementById("").classList.add("active");
