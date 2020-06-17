@@ -73,6 +73,7 @@ img {
   /* background-color: #2F4052; */
   color: #0e71eb;
 }
+
 .sidenav.left-side p a.active {
   background-color: #0e71eb;
   color: #fff;
@@ -143,6 +144,22 @@ footer {
   .sidenav.left-side {
     padding-top: 0
   }
+}
+
+table th {
+  background-color: #ccc;
+  text-align: center
+}
+
+table pre {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+table hr {
+  margin: 0
 }
 
 @media screen and (min-width: 768px) and (max-width: 791px) {
