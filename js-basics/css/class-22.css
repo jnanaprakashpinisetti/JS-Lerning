@@ -1,0 +1,62 @@
+.taskList {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.taskList li {
+  padding: 10px;
+  background-color: rgba(241, 241, 241, 0.534);
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.taskList li.active {
+  background-color: rgba(91, 240, 98, 0.767);
+}
+
+.taskList li a {
+  text-decoration: none;
+}
+
+.delete,
+.edit,
+.done {
+  padding: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  min-width: 100px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  float: right;
+  position: relative;
+
+}
+
+.save {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+
+.delete {
+  background-color: red;
+}
+
+.done {
+  background-color: green;
+}
+
+
+
+.edit {
+  background-color: blue;
+}
+
+.delete:hover,
+.edit :hover,
+.done:hover {
+  opacity: .5;
+}

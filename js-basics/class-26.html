@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class-26</title>
+</head>
+
+<body>
+
+  <div id="imgDiv">
+    <img src="">
+
+    <button id="show">show img</button>
+
+  </div>
+
+
+  <script>
+    var trees = [
+      'https://www.iconspng.com/images/colorful-natural-tree/colorful-natural-tree.jpg',
+
+      'http://pngimg.com/uploads/tree/tree_PNG92738.png',
+      'https://www.psdgraphics.com/wp-content/uploads/2010/01/palm-tree-icon.jpg',
+
+      'https://st3.depositphotos.com/13970786/19159/v/1600/depositphotos_191594418-stock-illustration-palm-trees-isolated-on-white.jpg',
+
+      'https://previews.123rf.com/images/drogatnev/drogatnev1707/drogatnev170700033/82027905-palmeras-tropicales-aisladas-sobre-fondo-blanco-cocoteros-ilustraci%C3%B3n-vectorial-en-estilo-plano.jpg'
+    ];
+
+    
+   
+
+    document.getElementById('show').addEventListener('click', function() {
+     
+      var imgDiv = document.getElementById('imgDiv');
+      var imgSrc ='https://www.iconspng.com/images/colorful-natural-tree/colorful-natural-tree.jpg';
+      imgDiv.childNodes.src =imgSrc
+
+    })
+
+  </script>
+
+</body>
+
+</html>

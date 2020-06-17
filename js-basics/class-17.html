@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JS-Lerning Class 17th</title>
+  <script src="js/nav.js"></script>
+  <script>
+    cmnHeader()
+  </script>
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <script>
+    mainNav()
+  </script>
+
+  <div class="container-fluid text-center">
+    <div class="row  full-height">
+      <script>
+        leftNav("class_17")
+      </script>
+
+      <div class="col-xs-12 col-sm-10 col-md-10  text-left mid-body">
+        <h1>Class_17</h1>
+        <p>Reduce / Sort.</p>
+        <p><a href="https://www.youtube.com/watch?v=9Kiuf37JSbg&feature=youtu.be" target="blank">Video</a></p>
+        <hr>
+        <table class="table table-bordered" cellspacing=0>
+          <tbody>
+            <tr>
+              <th class="confluenceTh">Code</th>
+              <th class="confluenceTh">Output</th>
+            </tr>
+            <tr>
+              <td colspan="1" class="confluenceTd">
+                <pre><h4><b>filter()</b></h4>
+                  <code>
+  var x = [10, 15, 20, 25, 30];
+  var res = x.filter(function (value, index, array) {
+    return value % 2 === 0
+  })
+
+  console.log(res)
+                  </code>
+                </pre>
+              </td>
+              <td>
+                  <p>[10, 20, 30]</p>
+                  <p>filter() function ఒక high order function, ఇందులో ఒక call back function వుంటుంది. <br> ఆ call back function లో 3 arguments వుంటాయి అవి (value, index, array) 
+
+                  </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <pre>
+<pre><h4><b>reduce()</b></h4>
+<code>
+    var x = [5, 10, 15, 20, 25, 30];
+
+    var res = x.reduce(function(v, i) {
+      console.log(v,i)
+      return  100 + v;
+    })
+    
+    console.log(res)
+</code>
+</pre>
+</td>
+              <td>
+                <p>reduce() function ఒక high order function,  ఇందులో ఒక call back function వుంటుంది<br> ఆ call back function లో 3 arguments వుంటాయి అవి (value, index, array)  </p>
+                <p>reduce() function ని first time call చేసేటప్పుడు మొదటి ఎలిమెంట్ మొదటి argument (value) లోకి వెళ్తుంది, రెండవ element రెండవ argument (index) లోకి వెళ్తుంది </p>  
+                <p>రెండవ సారి return Element first argument(value) లోకి వెళ్తుంది ,  third eelment secone argument (index) లోకి వెళ్తుంది </p>
+                <hr>
+inside console Output
+<pre>
+ 5 10 (first time )
+ 105 15 (second time retrn value first argument లోకి వస్తుంది, third value index లోకి వస్తుంది)
+ 205 20
+ 305 25
+ 405 30 (finally last time return value index లోకి వస్తుంది)
+ <hr>
+ Outside console Output
+ 505
+</pre>
+<h5>we will use this reduce() function to return single value out of the collection values.</h5>
+<h5>sum of all number kavali ante ఈ reduce() function వాడాలి. reture(v+i)</h5>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+<h4><b>sort()</b></h4>
+<h5>1. Sorting the Number by using if condintion</h5>
+<pre>
+  <code>
+  var x = [10, 1, 15, 30, 25, 2];
+  var res = x.sort(function(a,b) {
+    if(a>b) {
+      return 1
+    } else {
+      return -1
+    }
+  });
+  console.log(res)
+  </code>
+  <hr>
+  <code>
+    var res = x.sort(function(a,b) {
+      return (a-b)
+    })
+    
+    var res = x.sort(function(a,b) {
+      return (b-a)
+    })
+  </code>
+</pre>
+</td>
+              <td>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- RIGHT CONTAINER -->
+      <div class="col-xs-12 col-sm-12 col-md-3  sidenav">
+        <h3>Heading</h3>
+        <div class="well">
+
+          <p>ADS</p>
+        </div>
+        <div class="well">
+          <p>ADS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <script>
+    bottomfooter()
+  </script>
+  <script src="js/class_17.js"></script>
+</body>
+
+</html>
