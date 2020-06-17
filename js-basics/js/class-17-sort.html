@@ -1,0 +1,107 @@
+<html>
+
+<script>
+  var x = [10, 1, 15, 30, 25, 2, 11, 111, 116];
+
+  var res1 = x.sort();
+  console.log("Res-1 only sort() 'Before other fun' = " + res1);
+
+  var res2 = x.sort(function (a, b) {
+    if (a > b) {
+      return 1
+    } else {
+      return -1
+    }
+  });
+
+  var res3 = x.sort(function (a, b) {
+    return a + b
+  });
+
+  var res4 = x.sort(function (a, b) {
+    return a - b
+  });
+
+  var res5 = x.sort(function (a, b) {
+    return a * b
+  });
+
+  var res6 = x.sort(function (a, b) {
+    return a / b
+  });
+
+  var res7 = x.sort(function (a, b) {
+    return a % b
+  });
+
+  var res8 = x.sort(function (a, b) {
+    return a < b
+  });
+
+  var res9 = x.sort(function (a, b) {
+    return a > b
+  });
+
+  var res10 = x.sort(function (a, b) {
+    return a, b
+  });
+
+  var res11 = x.sort(function (a, b) {
+    return a & b
+  });
+
+  var res12 = x.sort(function (a, b) {
+    return a || b
+  });
+
+  var res13 = x.sort(function (a, b) {
+    return true
+  });
+  var res14 = x.sort(function (a, b) {
+    return false
+  });
+
+  var res15 = x.sort(function (a, b) {
+    return 0
+  });
+  var res16 = x.sort(function (a, b) {
+    return 1
+  });
+
+  var res17 = x.sort(function (a, b) {
+    return "abc"
+  });
+  var res17 = x.sort(function (a, b) {
+    return []
+  });
+
+  var res18 = x.sort(function (a, b) {
+    return ''
+  });
+
+
+
+  console.log("Res-1 only sort() 'after other fun' = " + res1);
+
+  console.log("Res-2 if = " + res2);
+
+  console.log("Res-3 '+' = " + res3);
+  console.log("Res-4 '-' = " + res4);
+  console.log("Res-5 '*' = " + res5);
+  console.log("Res-6 '/' = " + res6);
+  console.log("Res-7 '%' = " + res7);
+  console.log("Res-8 '<' = " + res8);
+  console.log("Res-9 '>' = " + res9);
+  console.log("Res-10 ',' = " + res10);
+  console.log("Res-11 '&' = " + res11);
+  console.log("Res-12 '||' = " + res12);
+  console.log("Res-13 'true' = " + res13);
+  console.log("Res-14 'false' = " + res14);
+  console.log("Res-15 '0' = " + res15);
+  console.log("Res-16 '1' = " + res16);
+  console.log("Res-17 'abc' = " + res16);
+  console.log("Res-17 '[]' = " + res17);
+  console.log("Res-18  '' = " + res18);
+</script>
+
+</html>

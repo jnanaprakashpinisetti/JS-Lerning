@@ -4,7 +4,12 @@ leftNav = (active_item) => {
   <p><a href="git-commands.html" id="git">Git Basic</a></p>\
   <p><a href="oops.html" id="oops">oops</a></p>\
   <p><a href="components.html" id="components">Components</a></p>\
-  <p><a href="#">Link</a></p>\
+  <p><a href="objects.html" id="objects">objects</a></p>\
+  <p><a href="constructor-fun.html" id="constructor_fun">Constructor fun</a></p>\
+  <p><a title="filter / reduce / sort" href="class-17.html" id="class_17">class_17</a></p>\
+  <p><a title = "" href="class-21.html" id="class_21">class_21</a></p>\
+  <p><a title = "" href="class-22.html" id="class_22">class_22</a></p>\
+  <p><a title = "" href=".html" id=""></a></p>\
 </div>')
 
   switch (active_item) {
@@ -16,6 +21,21 @@ leftNav = (active_item) => {
       break;
     case "components":
       document.getElementById("components").classList.add("active");
+      break;
+    case "objects":
+      document.getElementById("objects").classList.add("active");
+      break;
+    case "objects":
+      document.getElementById("constructor_fun").classList.add("active");
+      break;
+    case "class_17":
+      document.getElementById("class_17").classList.add("active");
+      break;
+    case "class_21":
+      document.getElementById("class_21").classList.add("active");
+      break;
+    case "class_22":
+      document.getElementById("class_22").classList.add("active");
       break;
     case "":
       document.getElementById("").classList.add("active");
